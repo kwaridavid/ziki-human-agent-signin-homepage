@@ -222,38 +222,28 @@ function AgentDocsCallout() {
       </span>
       <div className="flex min-w-0 flex-col gap-2">
         <span className="text-sm font-bold text-zk-text">
-          See how people and agents work together
+          Agent API reference and workflow
         </span>
         <span className="text-[13px] leading-[1.55] text-zk-text2">
-          Agents can propose work, explain their plan, and wait for a person to approve the next step.
+          Review the API routes and see how agents propose work while people stay in control of approvals.
         </span>
-        <div className="flex flex-wrap gap-x-4 gap-y-2 text-[13px] font-bold">
+        <nav className="flex flex-wrap gap-2" aria-label="AI agent resources">
+          <a
+            href="/llms.txt"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex min-h-9 items-center gap-1.5 rounded-full border border-zk-border bg-zk-surface px-3 py-1.5 text-xs font-bold text-zk-text hover:border-electric-blue hover:text-zk-accent"
+          >
+            Agent API reference
+            <span aria-hidden="true">↗</span>
+          </a>
           <Link
             href="/#developers"
-            className="inline-flex min-h-7 max-w-full flex-wrap items-center gap-1 font-mono text-zk-text underline decoration-zk-border underline-offset-2 hover:text-zk-accent hover:decoration-zk-text"
+            className="inline-flex min-h-9 items-center rounded-full px-3 py-1.5 text-xs font-semibold text-zk-muted hover:bg-zk-surface hover:text-zk-text"
           >
-            Explore the agent workflow
-            <svg
-              width="13"
-              height="13"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
+            Agent workflow
           </Link>
-          <Link
-            href="/"
-            className="inline-flex min-h-7 items-center text-zk-text hover:underline"
-          >
-            Public homepage
-          </Link>
-        </div>
+        </nav>
       </div>
     </div>
   );
