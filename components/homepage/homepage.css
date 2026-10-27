@@ -306,6 +306,11 @@
 .ziki-homepage .approved { background: var(--green-soft); border-radius: 99px; color: var(--green); font-size: 7px; margin-left: auto; padding: 4px 6px; }
 
 .ziki-homepage .control-section { align-items: center; background: linear-gradient(145deg, #f7f9fd, #f0f5ff); border: 1px solid var(--line); border-radius: 28px; display: grid; gap: 75px; grid-template-columns: .9fr 1.1fr; margin-bottom: 70px; padding: 82px 64px; }
+.ziki-homepage .agent-resource-tabs { align-items: center; background: #e9eff9; border: 1px solid var(--line); border-radius: 999px; display: inline-flex; flex-wrap: wrap; gap: 4px; margin-bottom: 26px; padding: 4px; }
+.ziki-homepage .agent-resource-tab { border-radius: 999px; color: var(--muted); font-size: 12px; font-weight: 700; line-height: 1.3; padding: 9px 13px; transition: background .2s ease, color .2s ease, box-shadow .2s ease; }
+.ziki-homepage .agent-resource-tab:hover { color: var(--ink); }
+.ziki-homepage .agent-resource-tab.is-active { background: #fff; box-shadow: 0 2px 8px rgba(11,23,51,.08); color: var(--green); }
+.ziki-homepage .agent-resource-tab span { margin-left: 3px; }
 .ziki-homepage .control-copy h2 em { color: var(--green); font-style: normal; }
 .ziki-homepage .control-copy > p { color: var(--muted); font-size: 15px; line-height: 1.7; margin-top: 22px; max-width: 500px; }
 .ziki-homepage .feature-list { display: flex; flex-direction: column; gap: 20px; margin-top: 36px; }
@@ -439,6 +444,8 @@
 :root[data-theme='dark'] .ziki-homepage .switch-pulse { border-color: #f5f7fc; }
 :root[data-theme='dark'] .ziki-homepage .hero-integrations b { color: #b1bdd3; }
 :root[data-theme='dark'] .ziki-homepage .control-section { background: linear-gradient(145deg, #0f1d39, #102345); border-color: #263b63; }
+:root[data-theme='dark'] .ziki-homepage .agent-resource-tabs { background: #0b1733; border-color: #263b63; }
+:root[data-theme='dark'] .ziki-homepage .agent-resource-tab.is-active { background: #172f5e; box-shadow: none; }
 :root[data-theme='dark'] .ziki-homepage .workflow-card:hover { border-color: #3d5c91; box-shadow: 0 22px 55px rgba(0,0,0,.2); }
 :root[data-theme='dark'] .ziki-homepage .route-chip,
 :root[data-theme='dark'] .ziki-homepage .level-row span { background: #111f3d; border-color: #2b426e; color: #a9b8d3; }
@@ -579,6 +586,8 @@
 :root:not([data-theme='light']) .ziki-homepage .switch-pulse { border-color: #f5f7fc; }
 :root:not([data-theme='light']) .ziki-homepage .hero-integrations b { color: #b1bdd3; }
 :root:not([data-theme='light']) .ziki-homepage .control-section { background: linear-gradient(145deg, #0f1d39, #102345); border-color: #263b63; }
+:root:not([data-theme='light']) .ziki-homepage .agent-resource-tabs { background: #0b1733; border-color: #263b63; }
+:root:not([data-theme='light']) .ziki-homepage .agent-resource-tab.is-active { background: #172f5e; box-shadow: none; }
 :root:not([data-theme='light']) .ziki-homepage .workflow-card:hover { border-color: #3d5c91; box-shadow: 0 22px 55px rgba(0,0,0,.2); }
 :root:not([data-theme='light']) .ziki-homepage .route-chip,
 :root:not([data-theme='light']) .ziki-homepage .level-row span { background: #111f3d; border-color: #2b426e; color: #a9b8d3; }

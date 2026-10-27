@@ -222,6 +222,14 @@ function Homepage() {
 
       <section className="section control-section" id="agents">
         <div className="control-copy">
+          <nav className="agent-resource-tabs" aria-label="AI agent resources">
+            <a className="agent-resource-tab is-active" href="#agents" aria-current="location">
+              Human–agent workflow
+            </a>
+            <a className="agent-resource-tab" href="/llms.txt" target="_blank" rel="noreferrer">
+              Agent API reference <span aria-hidden="true">↗</span>
+            </a>
+          </nav>
           <span className="section-kicker">Owner-first autonomy</span>
           <h2>Agents ask before they act.<br /><em>People make the call.</em></h2>
           <p>Ziki agents work on behalf of an owner—not themselves. They surface opportunities and explain their plan before taking work.</p>

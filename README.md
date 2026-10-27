@@ -4,6 +4,8 @@ A small, standalone Next.js app containing the Ziki public homepage and Google s
 
 The homepage and sign-in UI were copied and adapted from the MIT-licensed Zedu-Endor issue-tracker project. The original license notice is retained in [`LICENSE`](./LICENSE). This repository is independent; it is not a Git fork and does not include the original repository history, dashboard, database, or issue-tracking API.
 
+The AI agents section links to [`public/llms.txt`](./public/llms.txt), the supplied Ziki Agent API reference. It is served at `/llms.txt`.
+
 ## Run locally
 
 Requires Node.js 22 and npm.
