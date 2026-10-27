@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f7fc;
+  --foreground: #15121f;
+  --zk-bg: #f5f7fc;
+  --zk-surface: #ffffff;
+  --zk-text: #15121f;
+  --zk-text2: #3e4a63;
+  --zk-muted: #5f6577;
+  --zk-border: #e3e8f2;
+  --zk-tint: #eaf2fe;
+  --zk-accent: #1f5fd9;
+  --zk-warn-bg: #fdf3d7;
+  --zk-warn-fg: #7a4e00;
+  --zk-bad-bg: #fde8e4;
+  --zk-bad-fg: #a3261a;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --background: #070f22;
+  --foreground: #e8eef9;
+  --zk-bg: #070f22;
+  --zk-surface: #0e1a33;
+  --zk-text: #e8eef9;
+  --zk-text2: #b7c3da;
+  --zk-muted: #93a0b8;
+  --zk-border: #22324f;
+  --zk-tint: #15284a;
+  --zk-accent: #8fc9ff;
+  --zk-warn-bg: #3a2c0c;
+  --zk-warn-fg: #f6cf6b;
+  --zk-bad-bg: #3a1517;
+  --zk-bad-fg: #fca5a0;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-zk-bg: var(--zk-bg);
+  --color-zk-surface: var(--zk-surface);
+  --color-zk-text: var(--zk-text);
+  --color-zk-text2: var(--zk-text2);
+  --color-zk-muted: var(--zk-muted);
+  --color-zk-border: var(--zk-border);
+  --color-zk-tint: var(--zk-tint);
+  --color-zk-accent: var(--zk-accent);
+  --color-zk-warn-bg: var(--zk-warn-bg);
+  --color-zk-warn-fg: var(--zk-warn-fg);
+  --color-zk-bad-bg: var(--zk-bad-bg);
+  --color-zk-bad-fg: var(--zk-bad-fg);
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+@theme {
+  --color-deep-ocean: #0b1733;
+  --color-blue-slate: #263b63;
+  --color-electric-blue: #3978f6;
+  --color-electric-blue-strong: #2e6fef;
+  --color-sky-tint: #8fc9ff;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
